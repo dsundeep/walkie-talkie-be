@@ -1,5 +1,5 @@
 {
-  "name": "radio-app",
+  "name": "walkie-talkie-be",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
