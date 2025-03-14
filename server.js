@@ -11,9 +11,9 @@ const io = socketIo(server, {
   }
 });
 
-const MAX_ROOMS = process.env.MAX_ROOMS;
-const MAX_ROOM_SIZE = process.env.MAX_ROOM_SIZE;
-const SERVER_PORT = process.env.SERVER_PORT;
+const MAX_ROOMS = Number(process.env.MAX_ROOMS || 1);
+const MAX_ROOM_SIZE = Number(process.env.MAX_ROOM_SIZE || 2);
+const SERVER_PORT = process.env.PORT || 3000;
 const createdRooms = {};
 
 io.on('connection', (socket) => {
